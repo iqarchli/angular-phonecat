@@ -8,6 +8,9 @@ angular.
         when('/phones', {
           template: '<phone-list></phone-list>'
         }).
+      when('/test', {
+          template: '<test-list></test-list>'
+        }).
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
