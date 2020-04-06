@@ -5,9 +5,10 @@
     angular.
       module('testList').
       component('testList', {
-        templateUrl: 'test-list/test-list.template.html',
+        templateUrl: '/test-list/test-list.template.html',
         controller: ['Phone','$http', '$scope',
           function TestListController(Phone,$http,$scope) {
+              debugger;
               
               var vm = this; 
 

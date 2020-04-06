@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="phonecatApp">
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,8 +10,8 @@
         <link href="/dist/css/styles.css" rel="stylesheet" />
         <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
-        <!-- angular files -->
         
+        <!-- angular files -->
         <script src="/lib/jquery/dist/jquery.js"></script>
         <script src="/lib/angular/angular.js"></script>
         <script src="/lib/angular-animate/angular-animate.js"></script>
@@ -30,10 +30,8 @@
         <script src="/phone-detail/phone-detail.component.js"></script>
         <script src="/test-list/test-list.module.js"></script>
         <script src="/test-list/test-list.component.js"></script>
-       
-        
         <!-- angular package -->
-        
+    
         
         
     </head>
@@ -124,12 +122,14 @@
                     <div class="container-fluid">
                         <h1 class="mt-4">Dashboard</h1>
                         <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard</li>
+                            <li class="breadcrumb-item active">Dashboard {{1+1}}</li>
                         </ol>
+                        {{1+1}}
+                        <div ng-view class="view-frame">
                         
-                        
-                        
+                        </div>
                     </div>
+                   
                 </main>
                 <footer class="py-4 bg-light mt-auto">
                     <div class="container-fluid">
