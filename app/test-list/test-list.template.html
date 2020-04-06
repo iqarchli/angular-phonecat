@@ -1,26 +1,60 @@
- <h1>Test Sheets  </h1>
-
-<button id="button_add" class="btn btn-default" ng-click="$ctrl.add()">Add</button>
-
- <div id="grid1" ui-grid="$ctrl.gridOptions" class="grid">
 
 
-     
+<!-- <div id="grid1" ui-grid="$ctrl.gridOptions" class="myGrid">
+
+
+    
      
      //input button and output button
-</div> 
+</div>  --> 
 
-  <!--
-      Try clicking the Add button to add the company column.
-      Try clicking the Remove button to remove the last column.
-      Try clicking the Splice button to insert a column in the middle.
-      <br>
-      <br>
-      <button id="button_add" class="btn btn-default" ng-click="$ctrl.add()">Add</button>
-      <button id="button_remove" class="btn btn-default" ng-click="$ctrl.remove()">Remove Last</button>
-      <button id="button_splice" class="btn btn-default" ng-click="$ctrl.splice()">Splice</button>
-      <button id="button_unsplice" class="btn btn-default" ng-click="$ctrl.unsplice()">Remove Middle</button>
-      <button id="button_toggle_visible" class="btn btn-default" ng-click="$ctrl.toggleVisible()">Toggle Visible</button>
-      <button id="button_toggle_display_name" class="btn btn-default" ng-click="$ctrl.toggleDisplayName()">Toggle Display Name</button>
-      <div id="grid1" ui-grid="$ctrl.gridOptions" class="grid"></div>
-    --> 
+ 
+   <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </p>
+    
+        <div class="col-md-6">
+          <label>
+            <input type="radio" ng-model="color.name" value="red">
+            Red
+          </label>
+        </div>
+        <div class="col-md-6">
+         <label>
+            <input type="radio" ng-model="color.name" value="green">
+            Red
+          </label>
+         </div>
+   
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+       <h1>Random Input Generator </h1>
+
+<button id="button_add" class="btn btn-default" ng-click="$ctrl.rand($ctrl.test)">Add</button>
+   
+    
+    <input type="text" ng-model="$ctrl.test">
+        
+    <h3>{{$ctrl.result}}</h3>
+    
+   
+
+    </div>
+  </div>
+</div>
