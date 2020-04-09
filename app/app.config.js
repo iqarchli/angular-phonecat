@@ -11,6 +11,9 @@ angular.
       when('/test', {
           template: '<test-list></test-list>'
         }).
+       when('/json', {
+          template: '<json-list></json-list>'
+        }).
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).

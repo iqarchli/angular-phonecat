@@ -7,5 +7,6 @@ angular.module('phonecatApp', [
   'core',
   'phoneDetail',
   'phoneList',
-  'testList'
+  'testList',
+  'jsonList'
 ]);

@@ -30,6 +30,8 @@
         <script src="/phone-detail/phone-detail.component.js"></script>
         <script src="/test-list/test-list.module.js"></script>
         <script src="/test-list/test-list.component.js"></script>
+         <script src="/json-list/json-list.module.js"></script>
+        <script src="/json-list/json-list.component.js"></script>
         <!-- angular package -->
     
         
@@ -120,14 +122,13 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid">
-                        <h1 class="mt-4">Dashboard</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard {{1+1}}</li>
-                        </ol>
-                        {{1+1}}
-                        <div ng-view class="view-frame">
+                        <h1 class="mt-4"></h1>
                         
+                        
+                        <!-- Every time the current route changes, the included view changes with it according to the configuration of the $route service. -->
+                        <div ng-view class="view-frame">
                         </div>
+                        
                     </div>
                    
                 </main>
