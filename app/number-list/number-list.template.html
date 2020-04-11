@@ -14,7 +14,7 @@
     </div> -->
 <!-- this can be used as a layout for the sub page -->
     <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item active">Json Input Generator</li>
+        <li class="breadcrumb-item active">Number Input Generator</li>
     </ol>
     <div class="row">
         <div class="col-lg-6">
@@ -24,48 +24,36 @@
                     <form>
                         <div class="form-row">
                             <div class="col-md-6">
-                                <div class="form-group"><label class="small mb-1" for="">JSON's Depth</label><input class="form-control py-4" id="depth" type="text" placeholder="JSON structures's depth" /></div>
-                            </div>
-                             <div class="col-md-6">
-                                <div class="form-group"><label class="small mb-1" for="">Max elements per depth</label><input class="form-control py-4" id="" type="text" placeholder="Depth level" /></div>
+                                <div class="form-group"><label class="small mb-1" for="">Range Starts at</label><input class="form-control py-4" id="depth" type="text" placeholder="Start from" /></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="form-group">
-                                 <label class="small mb-1" for="">Data types</label> <br>
-                                <div class="form-check form-check-inline col-md-12">
-                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                                  <label class="form-check-label" for="inlineCheckbox1">Strings</label>
-                                </div>
-                                <div class="form-check form-check-inline col-md-12">
-                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                                  <label class="form-check-label" for="inlineCheckbox2">Booleans</label>
-                                </div>
-                                <div class="form-check form-check-inline col-md-12">
-                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
-                                  <label class="form-check-label" for="inlineCheckbox3">Integers</label>
-                                </div>
-                                <div class="form-check form-check-inline col-md-12">
-                                  <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4" >
-                                  <label class="form-check-label" for="inlineCheckbox4">Objects</label>
-                                </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="small mb-1" for="">String Options</label> <br>
+                                <label class="small mb-1" for="">Numbers to generate</label> <br>
                                     <div class="form-check form-check-inline col-md-12">
                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                                      <label class="form-check-label" for="inlineCheckbox5">Random English words</label>
+                                      <label class="form-check-label" for="inlineCheckbox5"> Integers only</label>
                                       
                                     </div>
                                     <div class="form-check form-check-inline col-md-12">
                                       <input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="option6">
-                                      <label class="form-check-label" for="inlineCheckbox6">Random strings</label>
+                                      <label class="form-check-label" for="inlineCheckbox6"> Decimals only</label>
                                     </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="form-group"><label class="small mb-1" for="">Range Ends at</label><input class="form-control py-4" id="" type="text" placeholder="End at" />
+                                 
+                                    
+                                    <label class="small mb-1" for="">Delimiter</label><input class="form-control py-4" id="" type="text" ng-model="$ctrl.delimiter" ng-value="$ctrl.delimiter" placeholder="Pick a delimiter between generated numbers"
+                                    />
+                                 </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="small mb-1" for="">Digits after floating point</label><input class="form-control py-4" id="" type="text" placeholder="How many digits after the decimal point" />
+                                    
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group col-md-6 mt-4 mb-0"><a class="btn btn-primary btn-block" href="">Randomize</a></div>
+                        <div class="form-group  col-md-6 mt-4 mb-0"><a class="btn btn-primary btn-block" href="">Randomize</a></div>
                     </form>
                 </div>
 

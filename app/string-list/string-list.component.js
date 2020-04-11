@@ -3,11 +3,11 @@
     /* */
     // Register `testList` component, along with its associated controller and template
     angular.
-      module('jsonList').
-      component('jsonList', {
-        templateUrl: '/json-list/json-list.template.html',
+      module('stringList').
+      component('stringList', {
+        templateUrl: '/string-list/string-list.template.html',
         controller: ['$http', '$scope',
-          function jsonListController($http,$scope) {
+          function stringListController($http,$scope) {
              
               var vm = this; 
 

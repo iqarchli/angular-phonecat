@@ -8,5 +8,8 @@ angular.module('phonecatApp', [
   'phoneDetail',
   'phoneList',
   'testList',
-  'jsonList'
+  'jsonList',
+  'csvList',
+  'stringList',
+  'numberList'
 ]);

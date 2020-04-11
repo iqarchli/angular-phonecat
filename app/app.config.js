@@ -14,6 +14,15 @@ angular.
        when('/json', {
           template: '<json-list></json-list>'
         }).
+      when('/csv', {
+          template: '<csv-list></csv-list>'
+        }).
+       when('/number', {
+          template: '<number-list></number-list>'
+        }).
+       when('/string/', {
+          template: '<string-list></string-list>'
+        }).
         when('/phones/:phoneId', {
           template: '<phone-detail></phone-detail>'
         }).
